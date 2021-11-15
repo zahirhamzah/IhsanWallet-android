@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/tv_applogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/applogo_foreground" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_applogo"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please log in to continue"
+        android:layout_below="@+id/textView2"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/sp_option"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_below="@+id/phoneNumber"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget password?"
+        android:gravity="end"
+        android:layout_below="@+id/password"
+        android:textColor="@color/design_default_color_primary_dark" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_below="@+id/forgetPassword"
+        android:text="Login"
+        android:textStyle="bold"
+        app:backgroundTint="#979C9B" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#979C9B"
+            android:text="Don't have an account yet?" />
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create One"
+            android:textColor="@color/design_default_color_primary" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
