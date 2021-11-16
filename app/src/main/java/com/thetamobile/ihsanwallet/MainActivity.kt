@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         option  =   findViewById(R.id.sp_option)
 
-        var options = arrayOf("+60", "+65", "+20")
+        var options = arrayOf("+60")
         option.adapter = ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, options )
 
         option.onItemSelectedListener   =   object : AdapterView.OnItemSelectedListener {
