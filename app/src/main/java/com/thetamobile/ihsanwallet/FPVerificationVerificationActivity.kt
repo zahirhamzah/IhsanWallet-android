@@ -10,11 +10,11 @@ class FPVerificationVerificationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_f_p_verification_verification)
 
-        val otpView: OtpView = findViewById(android.R.id.otp_view)
-        otpView.setOtpCompletionListener(object : OnOtpCompletionListener {
-            override fun onOtpCompleted(otp: String?) {
-                TODO("Not yet implemented")
-            }
-        })
+//        val otpView: OtpView = findViewById(android.R.id.otp_view)
+//        otpView.setOtpCompletionListener(object : OnOtpCompletionListener {
+//            override fun onOtpCompleted(otp: String?) {
+//                TODO("Not yet implemented")
+//            }
+//        })
     }
 }
